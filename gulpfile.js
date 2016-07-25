@@ -5,6 +5,7 @@ var reload = browserSync.reload;
 // watch files for changes and reload
 gulp.task('serve', function() {
   browserSync({
+    open: false,
     server: {
       baseDir: 'app'
     }
